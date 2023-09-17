@@ -8,27 +8,32 @@ body {
 }
 
 .profile__container {
-  position: relative;
   background-color: #20c997;
   min-height: 10rem;
-  border: 1px solid;
+  display: grid;
+  grid-template-rows: 14rem auto;
   /* padding: 10px; */
+}
+
+.profile__container header {
+  position: relative;
 }
 
 .profile__headtext {
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 50px;
   translate: -50% 0;
   color: #343a40;
   font-size: 48px;
 }
 
 .profile__details {
-  margin-top: 14rem;
+  /* margin-top: 14rem; */
   background-color: #fff;
   min-height: 10rem;
   border-radius: 20px 20px 0 0;
+  padding: 10px;
 }
 
 .profile__details--persInfo {
@@ -99,4 +104,30 @@ body {
   text-decoration: underline;
   cursor: pointer;
   color: #20c997;
+}
+
+.profile__details--history {
+  max-width: 900px;
+  margin: 20px auto;
+  border: 1px solid #343a4043;
+  border-radius: 10px;
+}
+
+.profile__details--history header {
+  font-size: 20px;
+  font-weight: 700;
+  color: #343a40;
+  padding: 20px;
+  border-bottom: 1px solid #343a4043;
+}
+
+.profile__details--history .content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 10rem;
+}
+.profile__details--history .content span {
+  color: #343a409a;
 }
